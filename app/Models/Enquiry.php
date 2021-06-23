@@ -10,5 +10,5 @@ class Enquiry extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $fillable = ['name', 'email', 'message'];
+    protected $fillable = ['name', 'entityName', 'phone', 'email', 'subject', 'message'];
 }

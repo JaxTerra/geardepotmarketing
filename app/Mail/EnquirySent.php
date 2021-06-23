@@ -37,7 +37,8 @@ class EnquirySent extends Mailable implements ShouldQueue
     public function build()
     {
         return $this->from(env('MAIL_FROM_ADDRESS'))
-            ->subject('New Enquiry Mail')
+            ->replyTo($this->enquiry->email)
+            ->subject('New Enquiry Mail |' .$this->enquiry->subject)
             ->markdown('emails.enquiry')
             ->with('enquiry', $this->enquiry);
     }

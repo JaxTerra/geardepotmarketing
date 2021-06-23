@@ -3,8 +3,11 @@
 
 Here is your new enquiry:
 
-Name: {{$enquiry->name}}\
+Contact Name: {{$enquiry->name}}\
+Entity Name: {{$enquiry->entityName}}\
 Email: {{$enquiry->email}}\
+Phone: {{$enquiry->phone}}\
+Subject: {{$enquiry->subject}}\
 Message: {{$enquiry->message}}
 
 Thanks,<br>

@@ -521,14 +521,14 @@ samp {
  *    CSS Remedy, with `svg` added as well.
  *
  *    https://github.com/mozdevs/cssremedy/issues/14
- * 
+ *
  * 2. Add `vertical-align: middle` to align replaced elements more
  *    sensibly by default when overriding `display` by adding a
  *    utility like `inline`.
  *
  *    This can trigger a poorly considered linting error in some
  *    tools but is included by design.
- * 
+ *
  *    https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210
  */
 
@@ -819,10 +819,10 @@ select {
 .prose ol[type="a"] {
 	--list-counter-style: lower-alpha;
 }
-.prose ol[type="A" s] {
+.prose ol[type="A"] s {
 	--list-counter-style: upper-alpha;
 }
-.prose ol[type="a" s] {
+.prose ol[type="a"] s {
 	--list-counter-style: lower-alpha;
 }
 .prose ol[type="I"] {
@@ -831,10 +831,10 @@ select {
 .prose ol[type="i"] {
 	--list-counter-style: lower-roman;
 }
-.prose ol[type="I" s] {
+.prose ol[type="I"] s {
 	--list-counter-style: upper-roman;
 }
-.prose ol[type="i" s] {
+.prose ol[type="i"] s {
 	--list-counter-style: lower-roman;
 }
 .prose ol[type="1"] {
@@ -1241,11 +1241,11 @@ select {
 .mb-4 {
 	margin-bottom: 1rem;
 }
-.mt-12 {
-	margin-top: 3rem;
-}
 .-mt-6 {
 	margin-top: -1.5rem;
+}
+.mt-12 {
+	margin-top: 3rem;
 }
 .mb-1 {
 	margin-bottom: 0.25rem;
@@ -1307,17 +1307,17 @@ select {
 .h-20 {
 	height: 5rem;
 }
-.h-64 {
-	height: 16rem;
-}
 .h-full {
 	height: 100%;
 }
-.h-px {
-	height: 1px;
-}
 .h-7 {
 	height: 1.75rem;
+}
+.h-64 {
+	height: 16rem;
+}
+.h-px {
+	height: 1px;
 }
 .min-h-screen {
 	min-height: 100vh;
@@ -1794,13 +1794,13 @@ select {
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;
 }
-.py-24 {
-	padding-top: 6rem;
-	padding-bottom: 6rem;
-}
 .px-8 {
 	padding-left: 2rem;
 	padding-right: 2rem;
+}
+.py-24 {
+	padding-top: 6rem;
+	padding-bottom: 6rem;
 }
 .pt-6 {
 	padding-top: 1.5rem;
@@ -1832,9 +1832,6 @@ select {
 .pb-1 {
 	padding-bottom: 0.25rem;
 }
-.pb-8 {
-	padding-bottom: 2rem;
-}
 .pt-10 {
 	padding-top: 2.5rem;
 }
@@ -1843,6 +1840,9 @@ select {
 }
 .pr-12 {
 	padding-right: 3rem;
+}
+.pb-8 {
+	padding-bottom: 2rem;
 }
 .text-left {
 	text-align: left;
@@ -2606,14 +2606,14 @@ select {
 		line-height: 2.5rem;
 	}
 
-	.sm\:text-2xl {
-		font-size: 1.5rem;
-		line-height: 2rem;
-	}
-
 	.sm\:text-3xl {
 		font-size: 1.875rem;
 		line-height: 2.25rem;
+	}
+
+	.sm\:text-2xl {
+		font-size: 1.5rem;
+		line-height: 2rem;
 	}
 }
 @media (min-width: 768px) {
@@ -2751,14 +2751,14 @@ select {
 		padding-right: 2rem;
 	}
 
-	.lg\:py-32 {
-		padding-top: 8rem;
-		padding-bottom: 8rem;
-	}
-
 	.lg\:py-16 {
 		padding-top: 4rem;
 		padding-bottom: 4rem;
+	}
+
+	.lg\:py-32 {
+		padding-top: 8rem;
+		padding-bottom: 8rem;
 	}
 
 	.lg\:py-24 {

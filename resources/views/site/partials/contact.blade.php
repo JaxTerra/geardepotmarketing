@@ -105,24 +105,45 @@
 
                 <!-- Contact form -->
                 <div class="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
-                    <h3 class="text-lg font-medium text-gray-900">Send us a message</h3>
-                    <form action="#" method="POST" class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                    <h3 class="text-lg font-medium text-gray-900 font-bold">Send us a message</h3>
+                    <form action="{{route('enquiries.store')}}"
+                          method="POST"
+                          class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                        @csrf
                         <div>
-                            <label for="first_name" class="block text-sm font-medium text-gray-900">First name</label>
+                            <label for="name" class="block text-sm font-medium text-gray-900">Contact Name</label>
                             <div class="mt-1">
-                                <input type="text" name="first_name" id="first_name" autocomplete="given-name" class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
+                                <input type="text"
+                                       name="name"
+                                       id="name"
+                                       autocomplete="name"
+                                       required
+                                       class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
                             </div>
                         </div>
                         <div>
-                            <label for="last_name" class="block text-sm font-medium text-gray-900">Last name</label>
+                            <div class="flex justify-between">
+                                <label for="entityName" class="block text-sm font-medium text-gray-900">Entity Name</label>
+                                <span id="entity-optional" class="text-sm text-gray-500">Optional</span>
+                            </div>
                             <div class="mt-1">
-                                <input type="text" name="last_name" id="last_name" autocomplete="family-name" class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
+                                <input type="text"
+                                       name="entityName"
+                                       id="entityName"
+                                       autocomplete="entityName"
+                                       class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                                       aria-describedby="entity-optional">
                             </div>
                         </div>
                         <div>
                             <label for="email" class="block text-sm font-medium text-gray-900">Email</label>
                             <div class="mt-1">
-                                <input id="email" name="email" type="email" autocomplete="email" class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
+                                <input id="email"
+                                       name="email"
+                                       type="email"
+                                       autocomplete="email"
+                                       required
+                                       class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
                             </div>
                         </div>
                         <div>
@@ -131,13 +152,22 @@
                                 <span id="phone-optional" class="text-sm text-gray-500">Optional</span>
                             </div>
                             <div class="mt-1">
-                                <input type="text" name="phone" id="phone" autocomplete="tel" class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" aria-describedby="phone-optional">
+                                <input type="text"
+                                       name="phone"
+                                       id="phone"
+                                       autocomplete="tel"
+                                       class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                                       aria-describedby="phone-optional">
                             </div>
                         </div>
                         <div class="sm:col-span-2">
                             <label for="subject" class="block text-sm font-medium text-gray-900">Subject</label>
                             <div class="mt-1">
-                                <input type="text" name="subject" id="subject" class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
+                                <input type="text"
+                                       name="subject"
+                                       id="subject"
+                                       required
+                                       class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
                             </div>
                         </div>
                         <div class="sm:col-span-2">
@@ -146,7 +176,12 @@
                                 <span id="message-max" class="text-sm text-gray-500">Max. 500 characters</span>
                             </div>
                             <div class="mt-1">
-                                <textarea id="message" name="message" rows="4" class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md" aria-describedby="message-max"></textarea>
+                                <textarea id="message"
+                                          name="message"
+                                          rows="4"
+                                          required
+                                          class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"
+                                          aria-describedby="message-max"></textarea>
                             </div>
                         </div>
                         <div class="sm:col-span-2 sm:flex sm:justify-end">

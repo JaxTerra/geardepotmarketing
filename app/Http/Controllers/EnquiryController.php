@@ -44,7 +44,7 @@ class EnquiryController extends Controller
 
         Mail::to(env('MAIL_FROM_ADDRESS'))->queue(new EnquirySent($enquiry));
 
-        return redirect()->route('contact')->with('success', 'Enquiry sent successfully');
+        return redirect()->route('landing')->with('success', 'Enquiry sent successfully');
     }
 
     /**
@@ -106,7 +106,6 @@ class EnquiryController extends Controller
             'name' => "required",
             'email' => "required|email",
             'message' => "required",
-            'g-recaptcha-response' => 'required|captcha',
         ]);
     }
 

@@ -12,4 +12,9 @@
             </div>
         </div>
     </div>
+
+    <div class="px-6">
+        @include('admin.enquiry-table')
+    </div>
+
 </x-app-layout>
