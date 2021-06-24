@@ -6,13 +6,14 @@
                 <img src="https://images.unsplash.com/photo-1601381718415-a05fb0a261f3?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8ODl8fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1216&q=80" alt="" class="w-full h-full object-cover">
             </div>
             <div class="relative lg:col-span-1">
-                <img class="h-12 w-auto" src="https://tailwindui.com/img/logos/workcation-logo-white.svg" alt="">
+                <img class="h-12 w-auto" src="{{asset('images/bond-logo.png')}}" alt="Bond Uni Logo">
                 <blockquote class="mt-6 text-white">
-                    <p class="text-xl font-medium sm:text-2xl">Workflow has completely transformed how we interact with customers. We've seen record bookings, higher customer satisfaction, and reduced churn.</p>
+                    <p class="text-xl font-medium sm:text-2xl">Gear Depot has been a gamechanger for our department.
+                        More good shit will be said here!!</p>
                     <footer class="mt-6">
                         <p class="flex flex-col font-medium">
-                            <span>Marie Chilvers</span>
-                            <span>CEO, Workcation</span>
+                            <span>Steve Guttormsen</span>
+                            <span>Guru, Bond Uni</span>
                         </p>
                     </footer>
                 </blockquote>

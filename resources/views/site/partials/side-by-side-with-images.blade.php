@@ -1,7 +1,12 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="py-16 bg-gray-50 overflow-hidden lg:py-24">
     <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
-        <svg class="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-1/4" width="404" height="784" fill="none" viewBox="0 0 404 784" aria-hidden="true">
+        <svg class="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-1/4"
+             width="404"
+             height="784"
+             fill="none"
+             viewBox="0 0 404 784"
+             aria-hidden="true">
             <defs>
                 <pattern id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
                     <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
@@ -15,7 +20,8 @@
                 A better way to send money
             </h2>
             <p class="mt-4 max-w-3xl mx-auto text-center text-xl text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in, accusamus quisquam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam voluptatum
+                cupiditate veritatis in, accusamus quisquam.
             </p>
         </div>
 
@@ -25,7 +31,9 @@
                     Transfer funds world-wide
                 </h3>
                 <p class="mt-3 text-lg text-gray-500">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere. Totam, velit.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae,
+                    porro maiores officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio
+                    iste blanditiis facere. Totam, velit.
                 </p>
 
                 <dl class="mt-10 space-y-10">
@@ -40,7 +48,8 @@
                             <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Competitive exchange rates</p>
                         </dt>
                         <dd class="mt-2 ml-16 text-base text-gray-500">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis
+                            suscipit eaque, iste dolor cupiditate blanditiis ratione.
                         </dd>
                     </div>
 
@@ -55,7 +64,8 @@
                             <p class="ml-16 text-lg leading-6 font-medium text-gray-900">No hidden fees</p>
                         </dt>
                         <dd class="mt-2 ml-16 text-base text-gray-500">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis
+                            suscipit eaque, iste dolor cupiditate blanditiis ratione.
                         </dd>
                     </div>
 
@@ -70,7 +80,8 @@
                             <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Transfers are instant</p>
                         </dt>
                         <dd class="mt-2 ml-16 text-base text-gray-500">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis
+                            suscipit eaque, iste dolor cupiditate blanditiis ratione.
                         </dd>
                     </div>
                 </dl>
@@ -85,11 +96,12 @@
                     </defs>
                     <rect width="784" height="404" fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
                 </svg>
-                <img class="relative mx-auto" width="490" src="https://tailwindui.com/img/features/feature-example-1.png" alt="">
+                <img class="relative mx-auto" width="490" src="{{asset('images/always-on-top-img.png')}}" alt="">
             </div>
         </div>
 
-        <svg class="hidden lg:block absolute right-full transform translate-x-1/2 translate-y-12" width="404" height="784" fill="none" viewBox="0 0 404 784" aria-hidden="true">
+        <svg class="hidden lg:block absolute right-full transform translate-x-1/2 translate-y-12"
+             width="404" height="784" fill="none" viewBox="0 0 404 784" aria-hidden="true">
             <defs>
                 <pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
                     <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
